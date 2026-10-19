@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="인사행정론 PDF 1~50쪽: 6개 단원과 강의록 수록 18문항을 Wiki, J, JBL로 학습합니다.">
+  <title>인사행정론 학습실</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="course-data.js"></script>
+  <script defer src="lecture-notes.js"></script>
+  <script defer src="jbl-data.js"></script>
+  <script defer src="wiki.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="masthead" id="masthead">
+    <a class="site-logo" href="#home">STUDY NOTE</a>
+    <button class="icon-button" id="settings-button" type="button" aria-label="설정 열기" aria-expanded="false" aria-controls="settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h8m4 0h6M3 12h3m4 0h11M3 18h11m4 0h3"/><circle cx="13" cy="6" r="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="18" r="2"/></svg>
+    </button>
+  </header>
+  <button id="recall-bar" hidden aria-label="강의 제목과 Wiki J JBL 버튼으로 이동" title="강의 메뉴 다시 보기"></button>
+  <div id="settings-backdrop" hidden></div>
+  <aside id="settings" hidden aria-label="학습 설정">
+    <div class="settings-label">화면 모드</div>
+    <div class="tool-row">
+      <button id="theme-toggle" class="tool-button" aria-pressed="false"><span aria-hidden="true">☾</span> 다크모드</button>
+      <button id="gesture-toggle" class="tool-button" aria-pressed="false"><span aria-hidden="true">↔</span> 제스처 끄기</button>
+    </div>
+    <label class="scale-label" for="font-scale">글씨 크기 <output id="scale-label">100%</output></label>
+    <input type="range" id="font-scale" min="50" max="150" step="5" value="100">
+    <button id="fold-all" class="tool-button" hidden><span aria-hidden="true">−</span> 모든 문단 접기</button>
+  </aside>
+  <main id="app"></main>
+  <aside id="linked-panel" hidden aria-label="연결된 내용">
+    <header class="panel-head">
+      <strong id="panel-title">연결된 내용</strong>
+      <div>
+        <button id="panel-back" class="icon-button" aria-label="연결된 내용 뒤로가기">←</button>
+        <button id="panel-expand" class="icon-button" aria-label="연결된 내용 전체화면" aria-pressed="false">−</button>
+        <button id="panel-close" class="icon-button" aria-label="연결된 내용 닫기">×</button>
+      </div>
+    </header>
+    <div id="panel-body" tabindex="-1"></div>
+    <nav id="panel-nav" class="question-nav" aria-label="연결 문항 이동" hidden></nav>
+  </aside>
+  <dialog id="image-dialog" aria-label="이미지 확대">
+    <button id="image-close" class="icon-button" aria-label="이미지 닫기">×</button>
+    <img id="large-image" alt="">
+  </dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <noscript>이 사이트를 사용하려면 브라우저의 JavaScript를 켜 주세요.</noscript>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-labelledby="t d">
+<title id="t">정책 평가의 세 가지 질문</title><desc id="d">효율성은 투입 대비 산출, 효과성은 목표 달성, 형평성은 편익과 부담의 배분을 본다.</desc>
+<rect width="900" height="240" rx="20" fill="#fff"/>
+<g font-family="Arial,Apple SD Gothic Neo,Malgun Gothic,sans-serif" text-anchor="middle">
+<rect x="20" y="25" width="270" height="190" rx="18" fill="#f8f0f5" stroke="#d9bdd0"/>
+<rect x="315" y="25" width="270" height="190" rx="18" fill="#f8f0f5" stroke="#d9bdd0"/>
+<rect x="610" y="25" width="270" height="190" rx="18" fill="#f8f0f5" stroke="#d9bdd0"/>
+<g font-size="28" font-weight="700" fill="#5b334f"><text x="155" y="88">효율성</text><text x="450" y="88">효과성</text><text x="745" y="88">형평성</text></g>
+<g font-size="21" fill="#744d67"><text x="155" y="140">투입 대비 산출</text><text x="450" y="140">목표 달성 여부</text><text x="745" y="140">편익과 부담의 배분</text></g>
+<g font-size="16" fill="#716875"><text x="155" y="180">자원을 어떻게 썼는가?</text><text x="450" y="180">하려던 일을 해냈는가?</text><text x="745" y="180">누가 무엇을 얻고 부담하는가?</text></g></g></svg>
